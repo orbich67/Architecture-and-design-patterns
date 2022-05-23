@@ -1,0 +1,10 @@
+21.05.2022 в 23:32:39 получено сообщение:
+Тема: Test theme
+Текст: First test message
+Отправитель: test@gmail.com
+-----
+21.05.2022 в 23:34:44 получено сообщение:
+Тема: Another test topic
+Текст: Some more message
+Отправитель: test@list.ru
+-----
