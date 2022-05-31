@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Работники{% endblock %}
+{% block content %}
+    {% for worker in staff %}
+        <h3>{{ worker.position }}</h3>
+        <p>Имя: {{ worker.name }}</p>
+        <p>Эл.почта: {{ worker.email }}</p>
+    {% endfor %}
+{% endblock %}
