@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}
+    {{title}}
+{% endblock %}
+{% block body %}
+    <h1>Список категорий</h1>
+    <ul>
+        {% if objects_list %}
+            {% for item in objects_list %}
+                <li>
+                    {{ item.name }}
+                    <span> Количество курсов: {{ item.course_count() }}</span>
+                </li>
+            {% endfor %}
+            <a class="link" href="/category_create/">Создать категорию...</a></p>
+        {% else %}
+            <p>Нет доступных категорий. <a class="link" href="/category_create/">Создать категорию...</a></p>
+        {% endif %}
+    </ul>
+{% endblock %}
