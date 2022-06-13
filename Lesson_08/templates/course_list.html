@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block body %}
+    <h1>Список курсов</h1>
+    <ul>
+        {% if objects_list %}
+            <p>Создать курс <a class="link" href="/course_create/"> Создать...</a></p>
+            {% for item in objects_list %}
+                <li>
+                    {{ item.name }} <span><a href="/course_copy/?name={{ item.name }}">Скопировать курс</a></span>
+                </li>
+            {% endfor %}
+        {% else %}
+            <p>Нет доступных курсов. <a class="link" href="/course_create/"> Создать...</a></p>
+        {% endif %}
+    </ul>
+{% endblock %}
