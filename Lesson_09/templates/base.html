@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% include "menu.html" %}
+    <style type="text/css">
+        {% block style %}{% include "style.css" %}{% endblock %}
+    </style>
+</head>
+<body>
+{% block body %}{% endblock %}
+{% block content %}{% endblock %}
+</body>
+<footer>Copyring &copy; <?php echo date("Y");?> Orbich67</footer>
+</html>
