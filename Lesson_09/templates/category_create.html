@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block body %}
+    <h1>Создание категории</h1>
+    <form method="POST">
+        <div>
+        <input type="text" name="name" placeholder="Название">
+            <button type="submit">Сохранить</button>
+        </div>
+    </form>
+{% endblock %}
